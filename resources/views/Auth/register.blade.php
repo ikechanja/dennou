@@ -4,7 +4,7 @@
         <div class="register-flex">
             <div>
                 <h2>新規登録</h2>
-                <p>最初のステップは簡単です。新規登録画面へようこそ。</p>
+                <p>最初のステップは簡単です。電脳小説都市新規登録画面へようこそ。</p>
                 <form method="POST">
                     <p>メールアドレス</p>
                     <input class="sign-input" type="email" name="email">
