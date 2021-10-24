@@ -117,4 +117,5 @@ header{
     border:none;
     border-bottom: solid 1px var(--black);
     outline: none;
+    background-color: var(--white);
 }
