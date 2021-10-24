@@ -19,7 +19,17 @@ class AuthController extends Controller
         return view('auth.register');
     }
     // 新規登録処理
-    public function register_store()
+    public function register_store(RegisterRequest $request)
     {
+        // 会員登録のデータを受け取る
+        $inputs = $request->all();
+        // パスワード確認
+        if ($inputs['password'] != $inputs['password_conf']) {
+            \Session::flash('password_error', '確認用のパスワードと異なります');
+            return redirect(route('register'));
+        }
+        // パスワードハッシュ化
+        $password_hash = password_hash($request['password'], PASSWORD_DEFAULT);
+        $inputs['password'] = $password_hash;
     }
 }
