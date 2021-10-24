@@ -29,3 +29,5 @@ Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 // 新規登録処理
 Route::post('/register/store', [AuthController::class, 'register_store'])->name('register_store');
+// 新規登録完了画面
+Route::get('/register/success', [AuthController::class, 'register_success'])->name('register_success');

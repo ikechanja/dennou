@@ -5,7 +5,7 @@
             <div>
                 <h2>新規登録</h2>
                 <p>最初のステップは簡単です。電脳小説都市新規登録画面へようこそ。</p>
-                <form method="POST">
+                <form method="POST" action="{{route('register_store')}}">
                     <p>メールアドレス</p>
                     <input class="sign-input" type="email" name="email">
                     <p>ペンネーム</p>
@@ -16,6 +16,7 @@
                     <input class="sign-input" type="password" name="password">
                     <p>パスワード（確認）</p>
                     <input class="sign-input" type="password" name="password_conf">
+                    @csrf
                     <input class="sign-submit" type="submit" value="新規登録">
                 </form>
             </div>
