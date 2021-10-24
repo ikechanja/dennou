@@ -24,3 +24,5 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [HomeController::class, 'index'])->name('index');
 // ログイン画面を表示
 Route::get('/login', [AuthController::class, 'login'])->name('login');
+// 新規登録画面を表示
+Route::get('/register', [AuthController::class, 'register'])->name('register');

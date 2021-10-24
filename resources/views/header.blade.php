@@ -19,10 +19,12 @@
     <header>
         <div class="container">
             <div class="header-inner">
-                <h1 class="top-logo">電脳小説都市<span class="be-ta">β</span></h1>
+                <a class="g-nav-link no-padding" href="{{route('index')}}">
+                    <h1 class="top-logo">電脳小説都市<span class="be-ta">β</span></h1>
+                </a>
                 <nav class="g-nav">
                     <a class="g-nav-link" href="{{route('login')}}">ログイン</a>
-                    <a class="g-nav-link" href="#">新規登録</a>
+                    <a class="g-nav-link" href="{{route('register')}}">新規登録</a>
                 </nav>
             </div>
         </div>

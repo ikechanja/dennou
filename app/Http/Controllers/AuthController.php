@@ -11,4 +11,9 @@ class AuthController extends Controller
     {
         return view('auth.login');
     }
+    // 新規登録画面を表示
+    public function register()
+    {
+        return view('auth.register');
+    }
 }
