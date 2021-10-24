@@ -119,3 +119,11 @@ header{
     outline: none;
     background-color: var(--white);
 }
+.sign-submit{
+    width:100%;
+    height:2rem;
+    background-color: var(--black);
+    color:var(--white);
+    border:none;
+    margin-top: 2rem;
+}
