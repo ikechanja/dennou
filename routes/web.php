@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 // コントローラー
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 // 新規登録画面を表示
 Route::get('/register', [AuthController::class, 'register'])->name('register');
+// 新規登録処理
+Route::post('/register/store', [AuthController::class, 'register_store'])->name('register_store');

@@ -10,6 +10,8 @@
                     <input class="sign-input" type="email" name="email">
                     <p>ペンネーム</p>
                     <input class="sign-input" type="text" name="username">
+                    <p>プロフィール（400文字以内）</p>
+                    <textarea class="sign-text" name="profile"></textarea>
                     <p>パスワード</p>
                     <input class="sign-input" type="password" name="password">
                     <p>パスワード（確認）</p>
