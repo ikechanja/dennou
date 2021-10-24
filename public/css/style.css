@@ -78,3 +78,9 @@ header{
     background-image: url('/img/top-wrapper.jpg');
     background-size: cover;
 }
+.about-inner{
+    width:100%;
+    height:auto;
+    border:solid 1px var(--black);
+    padding:1rem;
+}
