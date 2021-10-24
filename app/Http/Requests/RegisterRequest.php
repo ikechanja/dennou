@@ -13,7 +13,7 @@ class RegisterRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            //新規登録バリデーション
+            'email' => 'required | max:191',
+            'username' => 'required | max:191',
+            'profile' => 'required | max:400',
+            'password' => 'required | max:191',
         ];
     }
 }
