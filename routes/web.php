@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 // コントローラー
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,7 @@ use App\Http\Controllers\HomeController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+// トップ画面を表示
 Route::get('/', [HomeController::class, 'index'])->name('index');
+// ログイン画面を表示
+Route::get('/login', [AuthController::class, 'login'])->name('login');
