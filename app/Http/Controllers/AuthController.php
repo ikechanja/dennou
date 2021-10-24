@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests\RegisterRequest;
+
 class AuthController extends Controller
 {
     //ログイン画面を表示
