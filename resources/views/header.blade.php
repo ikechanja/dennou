@@ -18,6 +18,12 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="top-logo">電脳小説都市<span class="be-ta">β</span></h1>
+            <div class="header-inner">
+                <h1 class="top-logo">電脳小説都市<span class="be-ta">β</span></h1>
+                <nav class="g-nav">
+                    <a class="g-nav-link" href="#">ログイン</a>
+                    <a class="g-nav-link" href="#">新規登録</a>
+                </nav>
+            </div>
         </div>
     </header>

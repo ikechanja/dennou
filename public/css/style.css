@@ -71,6 +71,18 @@ header{
 .top-logo{
     line-height: 75px;
 }
+.g-nav{
+    display: flex;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.g-nav-link{
+    line-height: 75px;
+    padding:0 2rem;
+    text-decoration: none;
+}
 /* top-wrapper */
 .top-wrapper{
     width:100%;
